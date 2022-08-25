@@ -5,10 +5,10 @@ import { FilterContext } from "../App";
 const SliderField = ({ slide }) => {
   const { label, defaultValue, field } = slide;
   const [value, setValue] = useState(defaultValue);
-  const { customFilter, setCustumFilter } = useContext(FilterContext);
+  const { customFilter, setCustomFilter } = useContext(FilterContext);
 
   useEffect(() => {
-    setCustumFilter({ ...customFilter, [field]: value });
+    setCustomFilter({ ...customFilter, [field]: value });
   }, [value]);
 
   const handleSliderValue = e => setValue(e.target.value);

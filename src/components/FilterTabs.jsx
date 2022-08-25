@@ -20,7 +20,7 @@ const FilterTabs = () => {
         textColor="secondary"
         indicatorColor="secondary"
       >
-        <Tab value="instaFilter" label="Instaram Filter" />
+        <Tab value="instaFilter" label="Instagram Filter" />
         <Tab value="customFilter" label="Custom Filter" />
       </Tabs>
     </Box>

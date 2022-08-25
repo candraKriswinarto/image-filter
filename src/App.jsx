@@ -9,7 +9,7 @@ export const FilterContext = createContext();
 function App() {
   const [tabFilter, setTabFilter] = useState('instaFilter');
   const [filterClass, setFilterClass] = useState("");
-  const [customFilter, setCustumFilter] = useState({
+  const [customFilter, setCustomFilter] = useState({
     contrast: 100,
     brightness: 100,
     saturate: 100,
@@ -23,7 +23,7 @@ function App() {
     filterClass,
     setFilterClass,
     customFilter,
-    setCustumFilter
+    setCustomFilter
   }
 
   return (
